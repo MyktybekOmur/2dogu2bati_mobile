@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{bilgi.isin_adi}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <img src="../../assets/logo.png" />
+    <ion-card-header>
+      <ion-card-subtitle>{{bilgi.adi_soyad}}</ion-card-subtitle>
+      <ion-card-title>{{bilgi.isin_adi}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{bilgi.aciklama}}
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="happy-outline" slot="start"></ion-icon>
+      <ion-label>Iş Yapanlar</ion-label>
+     
+    </ion-item> 
+    <ion-card-content>
+      {{bilgi.isi_yapanlar}}
+    </ion-card-content>
+  </ion-card>
+ 
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="people" slot="start"></ion-icon>
+      <ion-label>Yararlanicilar</ion-label>
+     
+    </ion-item> 
+    <ion-card-content>
+      {{bilgi.yararlanicilar}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="map" slot="start"></ion-icon>
+      <ion-label>Yapıldığı Yer</ion-label>
+     
+    </ion-item> 
+    <ion-card-content>
+      {{bilgi.yapildigi_yer}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="person-add-outline" slot="start"></ion-icon>
+      <ion-label>Faydalanıcı Sayısı</ion-label>
+     
+    </ion-item> 
+    <ion-card-content>
+      {{bilgi.faydalanici_sayisi}}
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="time" slot="start"></ion-icon>
+      <ion-label>Zaman {{bilgi.y_saat}} -- {{bilgi.y_gun}}</ion-label>
+     
+    </ion-item> 
+    
+  </ion-card>
+
+
+
+
+</ion-content>

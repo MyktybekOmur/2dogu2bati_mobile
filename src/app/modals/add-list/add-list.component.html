@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    
+    <ion-buttons slot="primary">
+      <ion-button color="secondary" (click)='dismiss()'>
+        <ion-icon name="close-circle-outline" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>İş Ekle</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-label position="floating">İşin Adı</ion-label>
+    <ion-input [(ngModel)]="isin_adi"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Işi Yapanlar</ion-label>
+    <ion-input [(ngModel)]="isi_yapanlar"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Yararlanıcılar</ion-label>
+    <ion-input [(ngModel)]="yararlanicilar"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Yapıldığı Yer</ion-label>
+    <ion-input [(ngModel)]="yapildigi_yer"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Faydalanıcı Sayısı</ion-label>
+    <ion-input [(ngModel)]="faydalanici_sayisi"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Açıklama</ion-label>
+    <ion-textarea rows="4" [(ngModel)]="aciklama"></ion-textarea>
+  </ion-item>
+  
+
+  <ion-item>
+    <ion-label position="floating">GÜN/AY/YIL</ion-label>
+    <ion-datetime [(ngModel)]="y_gun" displayFormat="DD/MM/YYYY" min="1994-03-14" value="20-02-2021"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>SS:DD</ion-label>
+    <ion-datetime [(ngModel)]="y_saat" displayFormat="HH:mm"></ion-datetime>
+  </ion-item>
+
+  <div class="btn">
+    <ion-button shape="round" class="logBtn" (click)="todoAdd()">Kaydet</ion-button>
+    
+  </div>
+</ion-content>

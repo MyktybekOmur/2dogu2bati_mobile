@@ -24,3 +24,70 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-toolbar{
+    --border-style:none;
+
+    ion-title{
+        text-align: center;
+        color:black;
+    }
+    
+}
+
+.btn{
+    
+    justify-self: end;
+    text-align: center;
+    width: 95%;
+    margin-top: 40px;
+}
+.logBtn{
+    width: 45%;
+    
+}
+
+ion-toolbar{
+    --border-style:none;
+  }
+.logo{
+    margin-top: 20%;
+    text-align: center;
+    img{
+        width: 350px;
+        height: auto;
+    }
+}
+.addBtn{
+    margin-bottom: 20px;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+}
+.fixed{
+    width: 100%;
+    background-color: aliceblue;
+    position: fixed;
+    z-index: 2;
+    ion-item{
+        
+        padding: 5px;
+    
+        border-radius: 20px;
+        --border-radius: 20px;
+        
+        ion-label{
+            font-size: large;
+            height: 50px;
+            h2{
+                font-size: 20px;
+                color: black;
+            }
+        }
+    }
+}
+.list{
+    margin-top: 150px;
+}
+

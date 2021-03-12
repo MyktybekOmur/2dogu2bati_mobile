@@ -1,0 +1,25 @@
+<ion-header>
+ 
+</ion-header>
+
+<ion-content>
+  <div class="">
+    <div class="logo">
+    <img src="../../assets/logo.png"/>
+    <ion-card >
+       <ion-item>
+         <ion-label position="floating">E-mail</ion-label>
+         <ion-input [(ngModel)]="username"></ion-input>
+       </ion-item>
+      <ion-item>
+        <ion-label position="floating">Şifre</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+    </ion-card>
+    <div class="btn">
+        <ion-button shape="round" class="logBtn" [disabled]="!username || !password" (click)="login()">Login</ion-button>
+        <ion-button shape="round" fill="outline" class="logBtn" (click)="singUp()">Sing up</ion-button>
+    </div>
+  </div>
+  </div>
+</ion-content>

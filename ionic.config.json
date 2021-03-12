@@ -1,5 +1,7 @@
 {
   "name": "2dogu2bati",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
